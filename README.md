@@ -2,6 +2,37 @@
 
 AI옆자리과외 Agent 강의용 실습 저장소입니다.
 
+## 개발 환경
+
+이 저장소는 [uv] 기반 Python 프로젝트로 구성합니다.
+
+- Python 3.12
+- uv
+- 가상환경: `.venv` (`uv sync` 실행 시 생성)
+
+### 처음 실행하기
+
+저장소를 내려받습니다.
+
+```bash
+git clone https://github.com/nextaitutor-lecture/ai-next-tutor-agent.git
+cd ai-next-tutor-agent
+```
+
+uv가 없다면 먼저 설치한 뒤 버전을 확인합니다.
+
+```bash
+uv --version
+```
+
+프로젝트 환경을 생성합니다.
+
+```bash
+uv sync
+```
+
+현재 #27 예제는 외부 라이브러리를 사용하지 않으므로 추가 패키지 설치는 필요하지 않습니다.
+
 ## #27 Agent란? — 질문하는 AI에서 일하는 AI로
 
 이번 예제의 목표는 복잡한 Agent 프레임워크를 먼저 사용하는 것이 아니라, Agent의 가장 작은 동작을 코드로 직접 확인하는 것입니다.
@@ -33,10 +64,10 @@ State 갱신
 ### 실행 순서
 
 ```bash
-python agent27/01_state.py
-python agent27/02_decide.py
-python agent27/03_calendar.py
-python agent27/04_agent_v02.py
+uv run python agent27/01_state.py
+uv run python agent27/02_decide.py
+uv run python agent27/03_calendar.py
+uv run python agent27/04_agent_v02.py
 ```
 
 ### 01_state.py
