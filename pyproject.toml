@@ -1,0 +1,10 @@
+[project]
+name = "ai-next-tutor-agent"
+version = "0.1.0"
+description = "AI옆자리과외 - AI Agent 실습 예제"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv]
+package = false
